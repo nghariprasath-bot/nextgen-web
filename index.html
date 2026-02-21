@@ -277,7 +277,9 @@ function sendMessage() {
   if(input.value.toLowerCase().includes("contact")) {
     reply = "You can email us at nghariprasath@gmail.com";
   }
-
+if(input.value.toLowerCase().includes("time")) {
+    reply = " according to your project";
+  }
   messages.innerHTML += "<p><strong>AI:</strong> " + reply + "</p>";
 
   input.value = "";
@@ -286,6 +288,7 @@ function sendMessage() {
 </script>
 </body>
 </html>
+
 
 
 
