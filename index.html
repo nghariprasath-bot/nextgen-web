@@ -248,7 +248,7 @@ footer{
 <div class="chat-box" id="chatBox">
   <div class="chat-header">NextGen AI</div>
   <div class="chat-messages" id="chatMessages">
-    <p><strong>AI:</strong> Hello! How can I help in  details like price and contact</p>
+    <p><strong>AI:</strong> Hello! How can I help in  details like price,contact and time</p>
   </div>
   <div class="chat-input">
     <input type="text" id="userInput" placeholder="Type a message...">
@@ -278,7 +278,7 @@ function sendMessage() {
     reply = "You can email us at nghariprasath@gmail.com";
   }
 if(input.value.toLowerCase().includes("time")) {
-    reply = " according to your project";
+    reply = " according to your project:*if it is basic plan takes up to three days after Your request is accepted and business plan may 12 days after the request is accepted";
   }
   messages.innerHTML += "<p><strong>AI:</strong> " + reply + "</p>";
 
@@ -288,6 +288,7 @@ if(input.value.toLowerCase().includes("time")) {
 </script>
 </body>
 </html>
+
 
 
 
